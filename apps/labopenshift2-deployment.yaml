@@ -19,6 +19,6 @@ spec:
         app: labopenshift2
     spec:
       containers:
-        - image: docker.io/thibex/labopenshift2:2.0
+      - image: docker.io/thibex/labopenshift2:2.0
         name: labopenshift2
 ---
