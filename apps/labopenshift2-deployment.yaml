@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,5 +19,6 @@ spec:
         app: labopenshift2
     spec:
       containers:
-        - image: docker.io/thibex/labopenshift2:2.0
+        - image: quay.io/rhdevelopers/bgd:1.0.0
         name: labopenshift2
+---
