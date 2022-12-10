@@ -3,26 +3,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bgd
-  name: bgd
-  namespace: bgd
+    app: labopenshift2
+  name: labopenshift2
+  namespace: labopenshift2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgd
+      app: labopenshift2
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: bgd
+        app: labopenshift2
     spec:
       containers:
-      - image: quay.io/rhdevelopers/bgd:1.0.0
-        name: bgd
-        env:
-        - name: COLOR
-          value: "blue"
-        resources: {}
+      - image: quay.io/rhdevelopers/labopenshift2:1.0.0
+        name: labopenshift2
 ---
