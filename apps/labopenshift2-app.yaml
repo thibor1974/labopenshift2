@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/
+    path: apps
     repoURL: https://github.com/thibor1974/labopenshift2
     targetRevision: main
   syncPolicy:
