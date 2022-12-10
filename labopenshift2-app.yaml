@@ -9,7 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 
     repoURL: https://github.com/thibor1974/labopenshift2
     targetRevision: main
   syncPolicy:
