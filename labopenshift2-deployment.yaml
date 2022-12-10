@@ -19,6 +19,6 @@ spec:
         app: labopenshift2
     spec:
       containers:
-      - image: quay.io/rhdevelopers/labopenshift2:1.0.0
+        - image: hub.docker.com/thibex/labopenshift2:2.0
         name: labopenshift2
 ---
