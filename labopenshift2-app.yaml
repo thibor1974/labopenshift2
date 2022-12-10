@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: labopenshift2-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: labopenshift2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: /
+    repoURL: https://github.com/thibor1974/labopenshift2
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
